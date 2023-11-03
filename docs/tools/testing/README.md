@@ -14,19 +14,19 @@ zkSync Era provides two distinct testing environments for your development needs
 
 Each solution boasts unique characteristics tailored to diverse use cases. This guide aims to unpack the intricacies of these tools, aiding you in selecting the setup best suited for your development workflow.
 
-## In-Memory node vs Dockerized local setup
+## In-Memory Node vs Dockerized Local Setup
 
 The local testing process revolves around two principal options:
 
-1. **Dockerized local setup**: An extensive zkSync Era network simulation that comprises a Postgres database, a local Geth node functioning as Layer 1, and the zkSync node. Opt for this setup for comprehensive simulations and testing that require interaction with both L1 and L2.
+1. **Dockerized Local Setup**: An extensive zkSync Era network simulation that comprises a Postgres database, a local Geth node functioning as Layer 1, and the zkSync node. Opt for this setup for comprehensive simulations and testing that require interaction with both L1 and L2.
 
-2. **In-Memory node**: A lightweight, speedy alternative, the in-memory node, supports forking the state from various networks, including the mainnet and testnet. This choice is ideal for swift testing, prototyping, and bootloader and system contract testing.
+2. **In-Memory Node**: A lightweight, speedy alternative, the In-Memory Node supports forking the state from various networks, including the mainnet and testnet. This choice is ideal for swift testing, prototyping, and bootloader and system contract testing.
 
-### When to use each
+### When to Use Each
 
-- Use the **Dockerized local setup** for in-depth simulations and tests that necessitate L1 and L2 interaction. This complex and detailed setup mirrors how your contracts will function within the mainnet zkSync Era network.
+- Use the **Dockerized Local Setup** for in-depth simulations and tests that necessitate L1 and L2 interaction. This complex and detailed setup mirrors how your contracts will function within the zkSync Era mainnet network.
 
-- Opt for the **In-Memory node** for swift testing, prototyping, or testing new changes via the local bootloader and system contracts. This setup facilitates forking the state from the mainnet or testnet, suitable for replaying transactions or observing the impact of modifications on existing contracts.
+- Opt for the **In-Memory Node** for swift testing, prototyping, or testing new changes via the local bootloader and system contracts. This setup facilitates forking the state from the mainnet or testnet, suitable for replaying transactions or observing the impact of modifications on existing contracts.
 
 :::warning
 Being in its alpha stage, the In-Memory Node comes with some constraints and doesn't fully support all functionalities. For definitive testing, Dockerized Local Setup or a testnet is highly recommended.
